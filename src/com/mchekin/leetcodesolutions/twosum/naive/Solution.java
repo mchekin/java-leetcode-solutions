@@ -1,10 +1,10 @@
-package com.mchekin.leetcodesolutions.twosum.bruteforce;
+package com.mchekin.leetcodesolutions.twosum.naive;
 
 /**
  * Problem: <a href="https://leetcode.com/problems/two-sum/">Two Sum</a>
  *
  * <pre>
- *      Solution: Brute Force
+ *      Solution: Naive
  *      Time Complexity: O(n^2)
  *      Space Complexity: O(1)
  * </pre>
