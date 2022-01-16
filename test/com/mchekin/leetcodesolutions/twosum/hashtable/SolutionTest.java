@@ -1,4 +1,4 @@
-package com.mchekin.leetcodesolutions.twosum.bruteforce;
+package com.mchekin.leetcodesolutions.twosum.hashtable;
 
 import org.junit.jupiter.api.Test;
 
