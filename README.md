@@ -1,2 +1,2 @@
 # Java LeetCode Solutions
-Solutions to leetcode.com problems implemented in Java
+Solutions to https://leetcode.com problems implemented in Java
