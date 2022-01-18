@@ -5,30 +5,32 @@ package com.mchekin.leetcodesolutions.addtwonumbers.naive;
  */
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-
-        int rawResult = l1.val + l2.val;
-
-        int currentValue = rawResult % 10;
-        int carry = rawResult / 10;
-
-        ListNode result = new ListNode(currentValue);
+        ListNode result = new ListNode(0);
         ListNode currentNode = result;
 
-        while (l1.next != null && l2.next != null) {
-            l1 = l1.next;
-            l2 = l2.next;
+        int carry = 0;
 
-            rawResult = l1.val + l2.val + carry;
+        while (l1 != null || l2 != null) {
 
-            currentValue = rawResult % 10;
+            int operand1 = l1 != null ? l1.val : 0;
+            int operand2 = l2 != null ? l2.val : 0;
+
+            int rawResult = operand1 + operand2 + carry;
+
+            int currentValue = rawResult % 10;
             carry = rawResult / 10;
 
             currentNode.next = new ListNode(currentValue);
             currentNode = currentNode.next;
+
+            l1 = l1 != null ? l1.next : l1;
+            l2 = l2 != null ? l2.next : l2;
         }
 
-        currentNode.next = l1.next != null ? l1.next : l2.next;
+        if (carry > 0) {
+            currentNode.next = new ListNode(carry);
+        }
 
-        return result;
+        return result.next;
     }
 }

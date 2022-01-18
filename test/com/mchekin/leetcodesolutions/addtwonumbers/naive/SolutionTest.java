@@ -21,9 +21,14 @@ class SolutionTest {
     public static Stream<Arguments> provideExamples() {
         return Stream.of(
                 Arguments.of(
-                        new ListNode(2, new ListNode(4, new ListNode(3))),
-                        new ListNode(5, new ListNode(6, new ListNode(4))),
-                        new ListNode(7, new ListNode(0, new ListNode(8)))
+                        null,
+                        null,
+                        null
+                ),
+                Arguments.of(
+                        null,
+                        new ListNode(3),
+                        new ListNode(3)
                 ),
                 Arguments.of(
                         new ListNode(0),
@@ -32,8 +37,23 @@ class SolutionTest {
                 ),
                 Arguments.of(
                         new ListNode(2, new ListNode(4, new ListNode(3))),
+                        new ListNode(5, new ListNode(6, new ListNode(4))),
+                        new ListNode(7, new ListNode(0, new ListNode(8)))
+                ),
+                Arguments.of(
+                        new ListNode(2, new ListNode(4, new ListNode(3))),
                         new ListNode(5, new ListNode(6, new ListNode(4, new ListNode(5)))),
                         new ListNode(7, new ListNode(0, new ListNode(8, new ListNode(5))))
+                ),
+                Arguments.of(
+                        new ListNode(2, new ListNode(4, new ListNode(5))),
+                        new ListNode(5, new ListNode(6, new ListNode(4, new ListNode(5)))),
+                        new ListNode(7, new ListNode(0, new ListNode(0, new ListNode(6))))
+                ),
+                Arguments.of(
+                        new ListNode(9, new ListNode(9, new ListNode(9))),
+                        new ListNode(9, new ListNode(9, new ListNode(9))),
+                        new ListNode(8, new ListNode(9, new ListNode(9, new ListNode(1))))
                 )
         );
     }
@@ -42,12 +62,12 @@ class SolutionTest {
         ListNode currentExpected = expected;
         ListNode currentActual = actual;
 
-        do {
+        while (currentExpected != null && currentActual != null) {
             assertEquals(currentExpected.val, currentActual.val);
 
             currentExpected = currentExpected.next;
             currentActual = currentActual.next;
-        } while (currentExpected != null && currentActual != null);
+        }
 
         assertTrue(currentExpected == null && currentActual == null);
     }
