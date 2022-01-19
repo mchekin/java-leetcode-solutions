@@ -1,4 +1,4 @@
-package com.mchekin.leetcodesolutions.addtwonumbers.naive;
+package com.mchekin.leetcodesolutions.addtwonumbers;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

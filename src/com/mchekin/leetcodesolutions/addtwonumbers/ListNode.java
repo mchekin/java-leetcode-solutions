@@ -1,4 +1,4 @@
-package com.mchekin.leetcodesolutions.addtwonumbers.naive;
+package com.mchekin.leetcodesolutions.addtwonumbers;
 
 public class ListNode {
     int val;
