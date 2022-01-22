@@ -3,11 +3,10 @@ package com.mchekin.leetcodesolutions.twosum.naive;
 /**
  * Problem: <a href="https://leetcode.com/problems/two-sum/">Two Sum</a>
  *
- * <pre>
- *      Solution: Naive
- *      Time Complexity: O(n^2)
- *      Space Complexity: O(1)
- * </pre>
+ * <p>
+ * Solution: Naive
+ * Time Complexity: O(n^2)
+ * Space Complexity: O(1)
  */
 class Solution {
     public int[] twoSum(int[] nums, int target) {

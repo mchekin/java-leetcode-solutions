@@ -3,10 +3,9 @@ package com.mchekin.leetcodesolutions.addtwonumbers;
 /**
  * Problem: <a href="https://leetcode.com/problems/add-two-numbers/">Add Two Numbers</a>
  *
- * <pre>
- *      Time Complexity: O(max(n,m))
- *      Space Complexity: O(max(n,m))
- * </pre>
+ * <p>
+ * Time Complexity: O(max(n,m))
+ * Space Complexity: O(max(n,m))
  */
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {

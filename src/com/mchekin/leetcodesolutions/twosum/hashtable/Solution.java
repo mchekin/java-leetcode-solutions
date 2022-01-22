@@ -5,11 +5,10 @@ import java.util.HashMap;
 /**
  * Problem: <a href="https://leetcode.com/problems/two-sum/">Two Sum</a>
  *
- * <pre>
- *      Solution: Hashmap
- *      Time Complexity: O(n)
- *      Space Complexity: O(n)
- * </pre>
+ * <p>
+ * Solution: Hashmap
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
  */
 class Solution {
     public int[] twoSum(int[] nums, int target) {
