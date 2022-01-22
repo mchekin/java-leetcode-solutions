@@ -15,11 +15,11 @@ public class Solution {
         }
 
         int reversedX = 0;
-        while (x > reversedX) { // 1221 > 0; 122 > 1
-            reversedX = reversedX * 10 + x % 10; // 0 * 10 + 1221 % 10 = 1; 1 * 10 + 122 % 10 = 12;
-            x = x / 10; // 1221 / 10 = 122; 122 / 10 = 12;
+        while (x > reversedX) {
+            reversedX = reversedX * 10 + x % 10;
+            x = x / 10;
         }
 
-        return x == reversedX || x == reversedX / 10; // 12 == 12 || 12 == 12 / 10;
+        return x == reversedX || x == reversedX / 10;
     }
 }
