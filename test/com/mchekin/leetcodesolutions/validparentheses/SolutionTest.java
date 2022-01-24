@@ -1,4 +1,4 @@
-package com.mchekin.leetcodesolutions.palindromenumber;
+package com.mchekin.leetcodesolutions.validparentheses;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -11,32 +11,33 @@ import static org.junit.jupiter.api.Assertions.*;
 class SolutionTest {
     @ParameterizedTest
     @MethodSource("provideTrueExamples")
-    public void isPalindrome(int number) {
+    public void isValid(String string) {
 
-        assertTrue(new Solution().isPalindrome(number));
+        assertTrue(new Solution().isValid(string));
     }
 
     @ParameterizedTest
     @MethodSource("provideFalseExamples")
-    public void isNotPalindrome(int number) {
+    public void isNotValid(String string) {
 
-        assertFalse(new Solution().isPalindrome(number));
+        assertFalse(new Solution().isValid(string));
     }
 
     public static Stream<Arguments> provideTrueExamples() {
         return Stream.of(
-                Arguments.of(0),
-                Arguments.of(1),
-                Arguments.of(121),
-                Arguments.of(1221)
+                Arguments.of("()"),
+                Arguments.of("()[]{}"),
+                Arguments.of("(({[]})){[]}()")
         );
     }
 
     public static Stream<Arguments> provideFalseExamples() {
         return Stream.of(
-                Arguments.of(-1),
-                Arguments.of(10),
-                Arguments.of(1234)
+                Arguments.of("("),
+                Arguments.of("]"),
+                Arguments.of("(]"),
+                Arguments.of("({)"),
+                Arguments.of("([]")
         );
     }
 }
