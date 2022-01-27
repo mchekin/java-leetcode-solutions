@@ -4,8 +4,8 @@ package com.mchekin.leetcodesolutions.mergetwosortedlists;
  * Problem: <a href="https://leetcode.com/problems/merge-two-sorted-lists/">Merge Two Sorted Lists</a>
  *
  * <p>
- * Time Complexity:
- * Space Complexity:
+ * Time Complexity: O(n + m)
+ * Space Complexity: O(1)
  */
 class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
