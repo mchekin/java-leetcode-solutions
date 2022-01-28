@@ -1,4 +1,4 @@
-package com.mchekin.leetcodesolutions.longestcommonprefix;
+package com.mchekin.leetcodesolutions.longestcommonprefix.verticalscanning;
 
 /**
  * Problem: <a href="https://leetcode.com/problems/longest-common-prefix/">Longest Common Prefix</a>
