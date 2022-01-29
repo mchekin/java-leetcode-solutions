@@ -1,4 +1,4 @@
-package com.mchekin.leetcodesolutions.longestcommonprefix.verticalscanning;
+package com.mchekin.leetcodesolutions.longestcommonprefix.horizontalscanning;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
