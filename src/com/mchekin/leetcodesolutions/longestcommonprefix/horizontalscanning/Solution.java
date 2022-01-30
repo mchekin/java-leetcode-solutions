@@ -10,7 +10,7 @@ package com.mchekin.leetcodesolutions.longestcommonprefix.horizontalscanning;
 public class Solution {
     public String longestCommonPrefix(String[] strs) {
 
-        if (strs.length == 0) {
+        if (strs == null || strs.length == 0) {
             return "";
         }
 

@@ -19,6 +19,10 @@ class SolutionTest {
     public static Stream<Arguments> provideExamples() {
         return Stream.of(
                 Arguments.of(
+                        null,
+                        ""
+                ),
+                Arguments.of(
                         new String[]{},
                         ""
                 ),
