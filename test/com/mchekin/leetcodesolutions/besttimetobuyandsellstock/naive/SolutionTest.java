@@ -1,7 +1,6 @@
-package com.mchekin.leetcodesolutions.besttimetobuyandsellstock;
+package com.mchekin.leetcodesolutions.besttimetobuyandsellstock.naive;
 
-import static org.junit.jupiter.api.Assertions.*;
-
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -13,7 +12,7 @@ class SolutionTest {
     @MethodSource("provideExamples")
     public void removesDuplicates(int[] input, int expected) {
 
-        assertEquals(expected, new Solution().maxProfit(input));
+        Assertions.assertEquals(expected, new Solution().maxProfit(input));
     }
 
     public static Stream<Arguments> provideExamples() {

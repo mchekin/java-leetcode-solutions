@@ -1,4 +1,4 @@
-package com.mchekin.leetcodesolutions.besttimetobuyandsellstock;
+package com.mchekin.leetcodesolutions.besttimetobuyandsellstock.naive;
 
 /**
  * Problem: <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/">Best Time to Buy and Sell Stock</a>
