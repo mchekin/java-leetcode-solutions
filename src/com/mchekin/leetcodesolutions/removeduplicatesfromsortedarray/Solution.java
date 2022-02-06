@@ -1,5 +1,12 @@
 package com.mchekin.leetcodesolutions.removeduplicatesfromsortedarray;
 
+/**
+ * Problem: <a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array/">Remove Duplicates from Sorted Array</a>
+ *
+ * <p>
+ * Time Complexity: O(n) (where n is the number of numbers in the array)
+ * Space Complexity: O(1)
+ */
 public class Solution {
     public int removeDuplicates(int[] nums) {
 
