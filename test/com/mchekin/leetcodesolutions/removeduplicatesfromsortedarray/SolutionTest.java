@@ -29,6 +29,11 @@ class SolutionTest {
                         0
                 ),
                 Arguments.of(
+                        new int[]{},
+                        new int[]{},
+                        0
+                ),
+                Arguments.of(
                         new int[]{1},
                         new int[]{1},
                         1
