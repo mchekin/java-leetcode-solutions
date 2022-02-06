@@ -1,4 +1,4 @@
-package com.mchekin.leetcodesolutions.besttimetobuyandsellstock.naive;
+package com.mchekin.leetcodesolutions.besttimetobuyandsellstock.slidingwindow;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
