@@ -1,4 +1,4 @@
-package com.mchekin.leetcodesolutions.permutations;
+package com.mchekin.leetcodesolutions.permutations.backtracking1;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package com.mchekin.leetcodesolutions.permutations;
+package com.mchekin.leetcodesolutions.permutations.backtracking1;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
